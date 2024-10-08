@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cih7k4ecrwh56"]
+
+[ext_resource type="Texture2D" uid="uid://3en03421bfyy" path="res://Art Assets/Characters/Duck Girl/DuckGirl.png" id="1_xwm4l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gayyc"]
+size = Vector2(36, 42)
+
+[node name="patinhas" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 9.53674e-07)
+scale = Vector2(2.3125, 2.33333)
+texture = ExtResource("1_xwm4l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -1)
+shape = SubResource("RectangleShape2D_gayyc")
